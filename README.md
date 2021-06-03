@@ -7,13 +7,13 @@ It's project with:
 5-SQL (disable)  codes are exist but I can find free sql server than it's disable
 7-node js
 
-##Run Client
+## Run Client
 type in cmd or powershell :
 1- cd clinet
 2-npm start
 
 
-##Run server 
+## Run server 
 type in cmd or powershell :
 1-cd server
 2-cd mongo
