@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  .TotalContentAccount {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .titleAccount {
+    position: relative;
+    right: -60%;
+    font-size: 12px;
+  }
+
+  .DivFirstName {
+    display: flex;
+    margin-top: 1em;
+  }
+
+  .labelOfAccount {
+    margin-right: 1em;
+    margin-bottom: 2.2em;
+    font-size: 0.8em;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 200;
+  }
+
+  .FirstNameAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -100%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 150px;
+    height: 25px;
+    font-size: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .BirthdayAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -100%;
+    top: 66%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .FirstNameAccountInput:focus {
+    outline: none;
+  }
+
+  .IconsEdit {
+    font-size: 15px;
+    margin-top: 4px;
+    right: -50%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .IconsSave {
+    font-size: 15px;
+    margin-top: 4px;
+    right: -60px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .country {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 87%;
+    right: -100%;
+    margin-top: 15px;
+    margin-bottom: 1em;
+  }
+
+  .title {
+    top: -25%;
+    right: -290%;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    animation: none;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .TotalContentAccount {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .titleAccount {
+    position: relative;
+    right: -85%;
+    font-size: 18px;
+  }
+
+  .DivFirstName {
+    display: flex;
+    margin-top: 1em;
+  }
+
+  .labelOfAccount {
+    margin-right: 1em;
+    margin-bottom: 2.2em;
+    font-size: 0.8em;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 200;
+  }
+
+  .FirstNameAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -160%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 180px;
+    height: 25px;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .BirthdayAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -160%;
+    top: 68%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 180px;
+    height: 25px;
+    font-size: 12px;
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .FirstNameAccountInput:focus {
+    outline: none;
+  }
+
+  .IconsEdit {
+    font-size: 20px;
+    margin-top: 4px;
+    right: -90%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .IconsSave {
+    font-size: 20px;
+    margin-top: 4px;
+    right: -100px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .country {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 87%;
+    right: -160%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .title {
+    top: -25%;
+    right: -490%;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    animation: none;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .TotalContentAccount {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .titleAccount {
+    position: relative;
+    right: -80%;
+    font-size: 18px;
+  }
+
+  .DivFirstName {
+    display: flex;
+    margin-top: 1em;
+  }
+
+  .labelOfAccount {
+    margin-right: 1em;
+    margin-bottom: 2.2em;
+    font-size: 0.8em;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 200;
+  }
+
+  .FirstNameAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -160%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 180px;
+    height: 25px;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .BirthdayAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -160%;
+    top: 68%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 180px;
+    height: 25px;
+    font-size: 12px;
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .FirstNameAccountInput:focus {
+    outline: none;
+  }
+
+  .IconsEdit {
+    font-size: 20px;
+    margin-top: 4px;
+    right: -90%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .IconsSave {
+    font-size: 20px;
+    margin-top: 4px;
+    right: -100px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .country {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 87%;
+    right: -160%;
+    margin-top: 15px;
+  }
+
+  .title {
+    top: -25%;
+    right: -290%;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    animation: none;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .TotalContentAccount {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .titleAccount {
+    position: relative;
+    right: -300%;
+    font-size: 18px;
+  }
+
+  .DivFirstName {
+    display: flex;
+    margin-top: 1em;
+  }
+
+  .labelOfAccount {
+    margin-right: 0.5em;
+    margin-bottom: 2.2em;
+    font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 200;
+  }
+
+  .FirstNameAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -360%;
+    position: absolute;
+    z-index: -1;
+    width: 180px;
+    height: 25px;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .BirthdayAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -360%;
+    top: 59%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 180px;
+    height: 25px;
+    font-size: 12px;
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .FirstNameAccountInput:focus {
+    outline: none;
+  }
+
+  .IconsEdit {
+    font-size: 25px;
+
+    right: -430%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .IconsSave {
+    font-size: 25px;
+    right: -470%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .country {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 82%;
+    font-size: 12px;
+    right: -360%;
+  }
+
+  .title {
+    top: -25%;
+    right: -290%;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    animation: none;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 1024px) {
+  .TotalContentAccount {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .titleAccount {
+    position: relative;
+    right: -300%;
+    font-size: 20px;
+  }
+
+  .DivFirstName {
+    display: flex;
+    margin-top: 1em;
+  }
+
+  .labelOfAccount {
+    margin-right: 0.5em;
+    margin-bottom: 2.2em;
+    font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 200;
+  }
+
+  .FirstNameAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -360%;
+    position: absolute;
+    z-index: -1;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .BirthdayAccountInput {
+    border: solid #6f6d6d7c 2px;
+    border-radius: 5px;
+    right: -360%;
+    top: 59%;
+    position: absolute;
+    margin-top: 30px;
+    z-index: -1;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .FirstNameAccountInput:focus {
+    outline: none;
+  }
+
+  .IconsEdit {
+    font-size: 30px;
+
+    right: -450%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .IconsSave {
+    font-size: 30px;
+    right: -510%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .country {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 83%;
+    font-size: 12px;
+    right: -360%;
+  }
+
+  .title {
+    top: -25%;
+    right: -290%;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    animation: none;
+    font-weight: 900;
+  }
+}

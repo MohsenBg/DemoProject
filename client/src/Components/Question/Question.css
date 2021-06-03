@@ -1,0 +1,137 @@
+.Total {
+  margin-left: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#fb7ba2, #fce043);
+  box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+  border-radius: 4px;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  padding: 10px 10px;
+}
+.bars-close {
+  display: flex;
+  align-items: center;
+  border: solid 2px white;
+  border-radius: 2px;
+  background-color: blue;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  left: 91%;
+  top: 2%;
+}
+
+.bars-close:hover {
+  font-size: 25px;
+  color: aqua;
+  transform: translateX(-5px);
+  transform: translateY(-5px);
+}
+
+.title1 {
+  font-family: monospace;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 15px;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+.textareaPosition {
+  margin-top: 1rem;
+}
+.inputComment {
+  resize: none;
+  border: solid 2px rgba(100, 100, 400, 0.6);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  height: 200px;
+}
+.inputComment:focus {
+  outline: none;
+}
+
+.btnSize {
+  margin: 0.8rem 0;
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: teal;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnSize:hover {
+  background-color: tomato;
+}
+.btnSize:active {
+  opacity: 80%;
+}
+.sendMassageTitle {
+  padding-top: 1rem;
+  height: 50px;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 84%;
+  font-family: Modak;
+  padding-left: 7px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: calc(50vh - 100px);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.165);
+  margin-top: 1rem;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%230fd850' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%2320E2D7' flood-opacity='1' x='80px' y='160px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23fbed96' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+.pSend {
+  margin-top: 0.8rem;
+}
+
+.btnSend {
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  background: linear-gradient(#eb6b9d, #ee8c68);
+  width: 100px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btnSend:hover {
+  background: linear-gradient(#c81f70, #d19592);
+}
+
+.btnSend:active {
+  opacity: 80%;
+}
