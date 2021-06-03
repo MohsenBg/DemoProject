@@ -1,10 +1,10 @@
 # DemoProject
 It's project with: <br/>
-1- Frame work react <br/>
+1- Frame work react (default port 3000) <br/>
 2-redux  <br/>
 3-express  <br/>
-4-Mongo  <br/>
-5-SQL (disable)  codes are exist but I can find free sql server than it's disable <br/>
+4-Mongo  (default port 5001) <br/>
+5-SQL (disable)  codes are available but I can find free sql server than it's disable  (default port 5000)<br/>
 7-node js <br/>
 
 ## Run Client
