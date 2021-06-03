@@ -20,7 +20,7 @@ class Home extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="homePageTotal">
         <h1 className="home">Home</h1>
         {!this.state.QuestionImage ? (
           <img
