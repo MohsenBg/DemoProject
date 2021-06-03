@@ -4,7 +4,7 @@ It's project with:
 2-redux 
 3-express 
 4-Mongo 
-5-SQL (disable)  the are exist but I can find free sql server than it's disable
+5-SQL (disable)  codes are exist but I can find free sql server than it's disable
 7-node js
 
 ##Run Client
