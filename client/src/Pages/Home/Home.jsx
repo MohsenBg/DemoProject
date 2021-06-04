@@ -35,7 +35,7 @@ class Home extends Component {
     return (
       <div className="homePageTotal">
         <div className="foodTotalBack">
-          <div className="foodRightBack"></div>
+          <div className="foodLeftBack"></div>
           <div className="moreBackgroundColor"></div>
           <div className="yellowRight"></div>
           <div className="yellowLeftTop">
@@ -44,8 +44,8 @@ class Home extends Component {
           <div className="yellowLeftDown">
             <MdIcons.MdKeyboardArrowLeft />
           </div>
+          <div className="PhotoFoodRightDiv"></div>
 
-          <img src={Food01} className="PhotoFoodRight" alt="Food01" />
           <img src={Food02} className="PhotoFoodLeft" alt="Food02" />
           <img src={FaceBook} className="PhotoFaceBook" alt="FaceBook" />
           <img src={Twitter} className="PhotoTwitter" alt="Twitter" />

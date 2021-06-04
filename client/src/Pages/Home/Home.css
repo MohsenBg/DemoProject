@@ -1,195 +1,1293 @@
 @import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
 
-.homePageTotal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(36, 64, 88, 255);
-  padding-bottom: 10em;
-}
-.foodTotalBack {
-  margin-right: 20px;
-  position: relative;
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../../Image/HomePageImage/BackgroundHome.jpg);
-  background-size: cover;
-  background-position: 5em;
-  width: 600px;
-  height: 430px;
-}
-.moreBackgroundColor {
-  position: absolute;
-  -content: center;
-  background: linear-gradient(
-    90deg,
-    rgba(22, 47, 68, 1),
-    rgba(22, 47, 68, 0.04)
-  );
-  top: 0;
-  right: 0;
-  width: 500px;
-  height: 430px;
-}
-.foodRightBack {
-  position: absolute;
-  left: 0;
-  background-color: rgba(17, 36, 51, 255);
-  width: 100px;
-  height: 430px;
+@media (max-width: 1023px) {
+  .homePageTotal {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(36, 64, 88, 255);
+    padding-bottom: 4em;
+  }
+  .foodTotalBack {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../Image/HomePageImage/BackgroundHome.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 800px;
+  }
+  .moreBackgroundColor {
+    position: absolute;
+    -content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 47, 68, 1),
+      rgba(22, 47, 68, 0.6),
+      rgba(22, 47, 68, 0.04)
+    );
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 97%;
+    height: 800px;
+  }
+  .foodLeftBack {
+    position: absolute;
+    left: -2.1%;
+    background-color: rgba(17, 36, 51, 255);
+    width: 18%;
+    height: 800px;
+    z-index: 1;
+  }
+
+  .yellowRight {
+    position: absolute;
+    right: -2.1%;
+    top: 0;
+    background-color: rgb(251, 206, 0, 255);
+    width: 30%;
+    height: 700px;
+  }
+
+  .PhotoFoodRightDiv {
+    position: absolute;
+    background-image: url(../../Image/HomePageImage/Food01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    top: 70px;
+    right: 3%;
+    width: 40%;
+  }
+  .yellowLeftTop {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 70px;
+    border-bottom: solid white 3px;
+    right: 35%;
+    cursor: pointer;
+  }
+  .yellowLeftDown {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 0;
+    right: 35%;
+    cursor: pointer;
+  }
+
+  .PhotoFoodLeft {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    bottom: -50px;
+
+    left: 10%;
+    z-index: 2;
+  }
+  .btnPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-left: 4px;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    right: 40%;
+    top: 160px;
+    border: solid 4px yellow;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .btnPlay:hover {
+    cursor: pointer;
+  }
+  .PhotoTwitter {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .PhotoFaceBook {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 70px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .titleOfHomePage {
+    text-align: start;
+    text-decoration: underline yellow 3px;
+    top: 80px;
+    left: 11%;
+    color: white;
+    position: absolute;
+    font-size: 6.5em;
+    font-family: "Mate SC", serif;
+    z-index: 2;
+  }
+  .createBy {
+    z-index: 2;
+    text-align: start;
+    top: 5px;
+    left: 2%;
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    font-family: serif;
+  }
+
+  .createByDot {
+    z-index: 2;
+    text-align: start;
+    top: -30px;
+    left: 0;
+    color: yellow;
+    position: absolute;
+    font-size: 3em;
+  }
+  .spanOfHomePage {
+    z-index: 2;
+    text-align: start;
+    bottom: 250px;
+    left: 18%;
+    color: white;
+    position: absolute;
+    font-size: 1.4em;
+    font-family: "Mate SC", serif;
+  }
+
+  .PhotoLink {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20%;
+    cursor: pointer;
+  }
+  .PhotoSearch {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 12.5%;
+    cursor: pointer;
+  }
+  .PhotoBar {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 30px;
+    right: 2%;
+    cursor: pointer;
+  }
 }
 
-.yellowRight {
-  position: absolute;
-  right: -25px;
-  top: 0;
-  background-color: rgb(251, 206, 0, 255);
-  width: 220px;
-  height: 350px;
-}
-.PhotoFoodRight {
-  position: absolute;
-  width: 230px;
-  bottom: 30px;
-  height: auto;
-  right: 20px;
-}
-.yellowLeftTop {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  font-size: 1.3em;
-  padding-left: 10px;
-  width: 120px;
-  height: 50px;
-  background-color: rgb(251, 206, 0, 255);
-  bottom: 50px;
-  border-bottom: solid white 2px;
-  right: 170px;
-  cursor: pointer;
-}
-.yellowLeftDown {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  font-size: 1.3em;
-  padding-left: 10px;
-  width: 120px;
-  height: 50px;
-  background-color: rgb(251, 206, 0, 255);
-  bottom: 0;
-  right: 170px;
-  cursor: pointer;
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .homePageTotal {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(36, 64, 88, 255);
+    padding-bottom: 4em;
+  }
+  .foodTotalBack {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../Image/HomePageImage/BackgroundHome.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 800px;
+  }
+  .moreBackgroundColor {
+    position: absolute;
+    -content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 47, 68, 1),
+      rgba(22, 47, 68, 0.6),
+      rgba(22, 47, 68, 0.04)
+    );
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 97%;
+    height: 800px;
+  }
+  .foodLeftBack {
+    position: absolute;
+    left: -2.1%;
+    background-color: rgba(17, 36, 51, 255);
+    width: 18%;
+    height: 800px;
+    z-index: 1;
+  }
+
+  .yellowRight {
+    position: absolute;
+    right: -2.1%;
+    top: 0;
+    background-color: rgb(251, 206, 0, 255);
+    width: 30%;
+    height: 700px;
+  }
+
+  .PhotoFoodRightDiv {
+    position: absolute;
+    background-image: url(../../Image/HomePageImage/Food01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    top: 70px;
+    right: 3%;
+    width: 40%;
+  }
+  .yellowLeftTop {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 70px;
+    border-bottom: solid white 3px;
+    right: 35%;
+    cursor: pointer;
+  }
+  .yellowLeftDown {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 0;
+    right: 35%;
+    cursor: pointer;
+  }
+
+  .PhotoFoodLeft {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    bottom: -50px;
+
+    left: 10%;
+    z-index: 2;
+  }
+  .btnPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-left: 4px;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    right: 40%;
+    top: 160px;
+    border: solid 4px yellow;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .btnPlay:hover {
+    cursor: pointer;
+  }
+  .PhotoTwitter {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .PhotoFaceBook {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 70px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .titleOfHomePage {
+    text-align: start;
+    text-decoration: underline yellow 3px;
+    top: 80px;
+    left: 11%;
+    color: white;
+    position: absolute;
+    font-size: 6.5em;
+    font-family: "Mate SC", serif;
+    z-index: 2;
+  }
+  .createBy {
+    z-index: 2;
+    text-align: start;
+    top: 5px;
+    left: 2%;
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    font-family: serif;
+  }
+
+  .createByDot {
+    z-index: 2;
+    text-align: start;
+    top: -30px;
+    left: 0;
+    color: yellow;
+    position: absolute;
+    font-size: 3em;
+  }
+  .spanOfHomePage {
+    z-index: 2;
+    text-align: start;
+    bottom: 250px;
+    left: 18%;
+    color: white;
+    position: absolute;
+    font-size: 1.4em;
+    font-family: "Mate SC", serif;
+  }
+
+  .PhotoLink {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20%;
+    cursor: pointer;
+  }
+  .PhotoSearch {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 12.5%;
+    cursor: pointer;
+  }
+  .PhotoBar {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 30px;
+    right: 2%;
+    cursor: pointer;
+  }
 }
 
-.PhotoFoodLeft {
-  position: absolute;
-  width: 220px;
-  bottom: -30px;
-  height: auto;
-  left: 70px;
-}
-.btnPlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3em;
-  padding-left: 4px;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: 225px;
-  top: 130px;
-  border: solid 4px yellow;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.1);
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .homePageTotal {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(36, 64, 88, 255);
+    padding-bottom: 4em;
+  }
+  .foodTotalBack {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../Image/HomePageImage/BackgroundHome.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 800px;
+  }
+  .moreBackgroundColor {
+    position: absolute;
+    -content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 47, 68, 1),
+      rgba(22, 47, 68, 0.6),
+      rgba(22, 47, 68, 0.04)
+    );
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 97%;
+    height: 800px;
+  }
+  .foodLeftBack {
+    position: absolute;
+    left: -2.1%;
+    background-color: rgba(17, 36, 51, 255);
+    width: 18%;
+    height: 800px;
+    z-index: 1;
+  }
+
+  .yellowRight {
+    position: absolute;
+    right: -2.1%;
+    top: 0;
+    background-color: rgb(251, 206, 0, 255);
+    width: 30%;
+    height: 700px;
+  }
+
+  .PhotoFoodRightDiv {
+    position: absolute;
+    background-image: url(../../Image/HomePageImage/Food01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    top: 70px;
+    right: 3%;
+    width: 40%;
+  }
+  .yellowLeftTop {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 70px;
+    border-bottom: solid white 3px;
+    right: 35%;
+    cursor: pointer;
+  }
+  .yellowLeftDown {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 0;
+    right: 35%;
+    cursor: pointer;
+  }
+
+  .PhotoFoodLeft {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    bottom: -50px;
+
+    left: 10%;
+    z-index: 2;
+  }
+  .btnPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-left: 4px;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    right: 40%;
+    top: 160px;
+    border: solid 4px yellow;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .btnPlay:hover {
+    cursor: pointer;
+  }
+  .PhotoTwitter {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .PhotoFaceBook {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 70px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .titleOfHomePage {
+    text-align: start;
+    text-decoration: underline yellow 3px;
+    top: 80px;
+    left: 11%;
+    color: white;
+    position: absolute;
+    font-size: 8.5em;
+    font-family: "Mate SC", serif;
+    z-index: 2;
+  }
+  .createBy {
+    z-index: 2;
+    text-align: start;
+    top: 5px;
+    left: 2%;
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    font-family: serif;
+  }
+
+  .createByDot {
+    z-index: 2;
+    text-align: start;
+    top: -30px;
+    left: 0;
+    color: yellow;
+    position: absolute;
+    font-size: 3em;
+  }
+  .spanOfHomePage {
+    z-index: 2;
+    text-align: start;
+    bottom: 200px;
+    left: 18%;
+    color: white;
+    position: absolute;
+    font-size: 1.6em;
+    font-family: "Mate SC", serif;
+  }
+
+  .PhotoLink {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20%;
+    cursor: pointer;
+  }
+  .PhotoSearch {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 12.5%;
+    cursor: pointer;
+  }
+  .PhotoBar {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 30px;
+    right: 2%;
+    cursor: pointer;
+  }
 }
 
-.btnPlay:hover {
-  cursor: pointer;
-}
-.PhotoTwitter {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 15px;
-  bottom: 10px;
-  cursor: pointer;
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .homePageTotal {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(36, 64, 88, 255);
+    padding-bottom: 4em;
+  }
+  .foodTotalBack {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../Image/HomePageImage/BackgroundHome.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 800px;
+  }
+  .moreBackgroundColor {
+    position: absolute;
+    -content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 47, 68, 1),
+      rgba(22, 47, 68, 0.6),
+      rgba(22, 47, 68, 0.04)
+    );
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 97%;
+    height: 800px;
+  }
+  .foodLeftBack {
+    position: absolute;
+    left: -2.1%;
+    background-color: rgba(17, 36, 51, 255);
+    width: 18%;
+    height: 800px;
+    z-index: 1;
+  }
+
+  .yellowRight {
+    position: absolute;
+    right: -2.1%;
+    top: 0;
+    background-color: rgb(251, 206, 0, 255);
+    width: 30%;
+    height: 700px;
+  }
+  .PhotoFoodRight {
+    position: absolute;
+    width: auto;
+    top: 100px;
+    height: 650px;
+    right: 2%;
+  }
+
+  .PhotoFoodRightDiv {
+    position: absolute;
+    background-image: url(../../Image/HomePageImage/Food01.jpg);
+    background-size: cover;
+    background-position: 0 80%;
+    height: 700px;
+    top: 70px;
+    right: 3%;
+    width: 40%;
+  }
+  .yellowLeftTop {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 70px;
+    border-bottom: solid white 3px;
+    right: 35%;
+    cursor: pointer;
+  }
+  .yellowLeftDown {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 0;
+    right: 35%;
+    cursor: pointer;
+  }
+
+  .PhotoFoodLeft {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    bottom: -50px;
+
+    left: 10%;
+    z-index: 2;
+  }
+  .btnPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-left: 4px;
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    right: 40%;
+    top: 160px;
+    border: solid 4px yellow;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .btnPlay:hover {
+    cursor: pointer;
+  }
+  .PhotoTwitter {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .PhotoFaceBook {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 70px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .titleOfHomePage {
+    text-align: start;
+    text-decoration: underline yellow 3px;
+    top: 50px;
+    left: 11%;
+    color: white;
+    position: absolute;
+    font-size: 9.5em;
+    font-family: "Mate SC", serif;
+    z-index: 2;
+  }
+  .createBy {
+    z-index: 2;
+    text-align: start;
+    top: 5px;
+    left: 2%;
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    font-family: serif;
+  }
+
+  .createByDot {
+    z-index: 2;
+    text-align: start;
+    top: -30px;
+    left: 0;
+    color: yellow;
+    position: absolute;
+    font-size: 3em;
+  }
+  .spanOfHomePage {
+    z-index: 2;
+    text-align: start;
+    bottom: 180px;
+    left: 18%;
+    color: white;
+    position: absolute;
+    font-size: 2em;
+    font-family: "Mate SC", serif;
+  }
+
+  .PhotoLink {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20%;
+    cursor: pointer;
+  }
+  .PhotoSearch {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 12.5%;
+    cursor: pointer;
+  }
+  .PhotoBar {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 30px;
+    right: 2%;
+    cursor: pointer;
+  }
 }
 
-.PhotoFaceBook {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 15px;
-  bottom: 45px;
-  cursor: pointer;
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .homePageTotal {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(36, 64, 88, 255);
+    padding-bottom: 4em;
+  }
+  .foodTotalBack {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../Image/HomePageImage/BackgroundHome.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 800px;
+  }
+  .moreBackgroundColor {
+    position: absolute;
+    -content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 47, 68, 1),
+      rgba(22, 47, 68, 0.6),
+      rgba(22, 47, 68, 0.04)
+    );
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 97%;
+    height: 800px;
+  }
+  .foodLeftBack {
+    position: absolute;
+    left: -2.1%;
+    background-color: rgba(17, 36, 51, 255);
+    width: 18%;
+    height: 800px;
+    z-index: 1;
+  }
+
+  .yellowRight {
+    position: absolute;
+    right: -2.1%;
+    top: 0;
+    background-color: rgb(251, 206, 0, 255);
+    width: 30%;
+    height: 700px;
+  }
+
+  .PhotoFoodRightDiv {
+    position: absolute;
+    background-image: url(../../Image/HomePageImage/Food01.jpg);
+    background-size: cover;
+    background-position: 0 70%;
+    height: 700px;
+    top: 70px;
+    right: 3%;
+    width: 40%;
+  }
+  .yellowLeftTop {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 70px;
+    border-bottom: solid white 3px;
+    right: 35%;
+    cursor: pointer;
+  }
+  .yellowLeftDown {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 0;
+    right: 35%;
+    cursor: pointer;
+  }
+
+  .PhotoFoodLeft {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    bottom: -50px;
+
+    left: 10%;
+    z-index: 2;
+  }
+  .btnPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-left: 4px;
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    right: 40%;
+    top: 160px;
+    border: solid 4px yellow;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .btnPlay:hover {
+    cursor: pointer;
+  }
+  .PhotoTwitter {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .PhotoFaceBook {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 70px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .titleOfHomePage {
+    text-align: start;
+    text-decoration: underline yellow 3px;
+    top: 30px;
+    left: 11%;
+    color: white;
+    position: absolute;
+    font-size: 10em;
+    font-family: "Mate SC", serif;
+    z-index: 2;
+  }
+  .createBy {
+    z-index: 2;
+    text-align: start;
+    top: 5px;
+    left: 2%;
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    font-family: serif;
+  }
+
+  .createByDot {
+    z-index: 2;
+    text-align: start;
+    top: -30px;
+    left: 0;
+    color: yellow;
+    position: absolute;
+    font-size: 3em;
+  }
+  .spanOfHomePage {
+    z-index: 2;
+    text-align: start;
+    bottom: 180px;
+    left: 18%;
+    color: white;
+    position: absolute;
+    font-size: 2em;
+    font-family: "Mate SC", serif;
+  }
+
+  .PhotoLink {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20%;
+    cursor: pointer;
+  }
+  .PhotoSearch {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 12.5%;
+    cursor: pointer;
+  }
+  .PhotoBar {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 30px;
+    right: 2%;
+    cursor: pointer;
+  }
 }
 
-.titleOfHomePage {
-  text-align: start;
-  text-decoration: underline yellow 3px;
-  top: 50px;
-  left: 60px;
-  color: white;
-  position: absolute;
-  font-size: 3.5em;
-  font-family: "Mate SC", serif;
-}
-.createBy {
-  text-align: start;
-  top: 2px;
-  left: 12px;
-  color: white;
-  position: absolute;
-  font-size: 0.7em;
-  font-family: serif;
-}
+@media (min-width: 1920px) {
+  .homePageTotal {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(36, 64, 88, 255);
+    padding-bottom: 7em;
+  }
+  .foodTotalBack {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../Image/HomePageImage/BackgroundHome.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 800px;
+  }
+  .moreBackgroundColor {
+    position: absolute;
+    -content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 47, 68, 1),
+      rgba(22, 47, 68, 0.6),
+      rgba(22, 47, 68, 0.04)
+    );
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 97%;
+    height: 800px;
+  }
+  .foodLeftBack {
+    position: absolute;
+    left: -2.1%;
+    background-color: rgba(17, 36, 51, 255);
+    width: 18%;
+    height: 800px;
+    z-index: 1;
+  }
 
-.createByDot {
-  text-align: start;
-  top: -20px;
-  left: 2px;
-  color: yellow;
-  position: absolute;
-  font-size: 2em;
-}
-.spanOfHomePage {
-  text-align: start;
-  bottom: 140px;
-  left: 100px;
-  color: white;
-  position: absolute;
-  font-size: 0.9em;
-  font-family: "Mate SC", serif;
-}
+  .yellowRight {
+    position: absolute;
+    right: -2.1%;
+    top: 0;
+    background-color: rgb(251, 206, 0, 255);
+    width: 30%;
+    height: 700px;
+  }
+  .PhotoFoodRight {
+    position: absolute;
+    width: auto;
+    top: 100px;
+    height: 650px;
+    right: 2%;
+  }
 
-.PhotoLink {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  top: 20px;
-  right: 130px;
-  cursor: pointer;
-}
-.PhotoSearch {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 25px;
-  right: 80px;
-  cursor: pointer;
-}
-.PhotoBar {
-  position: absolute;
-  width: 25px;
-  height: auto;
-  top: 30px;
-  right: 20px;
-  cursor: pointer;
+  .PhotoFoodRightDiv {
+    position: absolute;
+    background-image: url(../../Image/HomePageImage/Food01.jpg);
+    background-size: cover;
+    background-position: 0 80%;
+    height: 700px;
+    top: 70px;
+    right: 3%;
+    width: 40%;
+  }
+  .yellowLeftTop {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 70px;
+    border-bottom: solid white 3px;
+    right: 35%;
+    cursor: pointer;
+  }
+  .yellowLeftDown {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
+    padding-left: 10px;
+    width: 15%;
+    height: 70px;
+    background-color: rgb(251, 206, 0, 255);
+    bottom: 0;
+    right: 35%;
+    cursor: pointer;
+  }
+
+  .PhotoFoodLeft {
+    position: absolute;
+    width: auto;
+    height: 250px;
+    bottom: -100px;
+
+    left: 14%;
+    z-index: 2;
+  }
+  .btnPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-left: 4px;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    right: 40%;
+    top: 160px;
+    border: solid 4px yellow;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .btnPlay:hover {
+    cursor: pointer;
+  }
+  .PhotoTwitter {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .PhotoFaceBook {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    bottom: 70px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .titleOfHomePage {
+    text-align: start;
+    text-decoration: underline yellow 3px;
+    top: 20px;
+    left: 11%;
+    color: white;
+    position: absolute;
+    font-size: 10.5em;
+    font-family: "Mate SC", serif;
+    z-index: 2;
+  }
+  .createBy {
+    z-index: 2;
+    text-align: start;
+    top: 5px;
+    left: 2%;
+    color: white;
+    position: absolute;
+    font-size: 1.2em;
+    font-family: serif;
+  }
+
+  .createByDot {
+    z-index: 2;
+    text-align: start;
+    top: -30px;
+    left: 0;
+    color: yellow;
+    position: absolute;
+    font-size: 3em;
+  }
+  .spanOfHomePage {
+    z-index: 2;
+    text-align: start;
+    bottom: 160px;
+    left: 20%;
+    color: white;
+    position: absolute;
+    font-size: 2.2em;
+    font-family: "Mate SC", serif;
+  }
+
+  .PhotoLink {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20%;
+    cursor: pointer;
+  }
+  .PhotoSearch {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 12.5%;
+    cursor: pointer;
+  }
+  .PhotoBar {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 30px;
+    right: 2%;
+    cursor: pointer;
+  }
 }
