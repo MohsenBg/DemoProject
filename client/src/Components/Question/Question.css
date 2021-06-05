@@ -1,5 +1,5 @@
 .Total {
-  margin-left: 1vh;
+  margin-left: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,4 +134,39 @@
 
 .btnSend:active {
   opacity: 80%;
+}
+
+@media (max-width: 550px) {
+  .Total {
+    position: relative;
+    width: 150px;
+    height: 200px;
+  }
+  .title1 {
+    position: absolute;
+    top: 5%;
+    right: -2%;
+    font-size: 0.7em;
+  }
+  .inputComment {
+    right: 10%;
+    top: 35%;
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    margin: 0;
+    padding: 8px;
+    font-size: 0.8em;
+  }
+  .bars-close {
+    position: absolute;
+    z-index: 3;
+    left: 80%;
+  }
+  .btnSize {
+    position: absolute;
+    right: 22%;
+    bottom: 0;
+    z-index: 1;
+  }
 }
